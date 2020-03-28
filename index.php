@@ -19,7 +19,6 @@ $db->connect('127.0.0.1', 'root', 'root', 'test');
 $db->query("show database");
 $db->close();
 
-
 //注册器模式
 $db = Frame\Register::get('db1');
 
@@ -32,8 +31,8 @@ $obj1 = Frame\Factory::createDateBase();
 var_dump($obj1->test());
 
 //链式操作
-$db = new Frame\Database();
-$db->where("id=1")->order("id desc")->limit(1);
+//$db = new Frame\Database();
+//$db->where("id=1")->order("id desc")->limit(1);
 
 //php魔术方法的使用
 $obj = new Frame\Obj();
